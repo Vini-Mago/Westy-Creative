@@ -1,0 +1,84 @@
+/* Estilos para o componente SectionTitle */
+
+.section-title-container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-title-container.left {
+  text-align: left;
+}
+
+.section-title-container.right {
+  text-align: right;
+}
+
+.section-title-container.light .section-title,
+.section-title-container.light .section-subtitle {
+  color: var(--white);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.section-title-container.left .section-title::after {
+  left: 0;
+  transform: none;
+}
+
+.section-title-container.right .section-title::after {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-color-light);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-title-container.left .section-subtitle {
+  margin-left: 0;
+}
+
+.section-title-container.right .section-subtitle {
+  margin-right: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-title-container {
+    margin-bottom: 2rem;
+  }
+}

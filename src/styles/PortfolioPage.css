@@ -1,0 +1,164 @@
+/* Estilos para a página de portfólio */
+
+/* Banner de Topo */
+.portfolio-banner {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.portfolio-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.portfolio-banner p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Sistema de Filtros */
+.portfolio-filters-section {
+  padding: 2rem 0;
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filters-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-filter {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-right: 3rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: var(--text-color-light);
+}
+
+/* Grid de Projetos */
+.portfolio-grid-section {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+/* Paginação */
+.pagination {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Call-to-Action */
+.portfolio-cta-section {
+  padding: 4rem 0;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .portfolio-banner h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-banner {
+    padding: 3rem 0;
+  }
+  
+  .portfolio-banner h1 {
+    font-size: 2rem;
+  }
+  
+  .portfolio-banner p {
+    font-size: 1.1rem;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-banner h1 {
+    font-size: 1.8rem;
+  }
+}
